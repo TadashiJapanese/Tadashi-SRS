@@ -4,7 +4,7 @@ import Config from './config'
 
 // holds state for the current quiz session.
 
-export class Drill {
+export default class Drill {
 
     constructor(strategy) {
 
@@ -122,4 +122,3 @@ export class Drill {
 
 }
 
-module.exports = Drill;

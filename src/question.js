@@ -91,7 +91,7 @@ class Card {
 
 }
 
-export class Item {
+export default class Item {
 
     constructor(data) {
 
@@ -138,5 +138,3 @@ export class Item {
     }
 
 }
-
-module.exports = Item

@@ -4,7 +4,7 @@ const MINUTES = 60000;
 const HOURS = MINUTES*60;
 const DAYS = HOURS*24;
 
-export const Config = {
+const Config = {
 
     MAX_LEVEL: 30,
 
@@ -31,4 +31,4 @@ export const Config = {
 
 };
 
-module.exports = Config;
+export default Config;
