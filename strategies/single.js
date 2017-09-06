@@ -7,7 +7,7 @@ const MINUTES = 60000;
 const HOURS = MINUTES*60;
 const DAYS = HOURS*24;
 
-export class SingleLevelPickStrategy {
+export default class SingleLevelPickStrategy {
 
     // The Strategy determines the order to present questions to the user.
 
@@ -112,4 +112,4 @@ export class SingleLevelPickStrategy {
 
 }
 
-module.exports = SingleLevelPickStrategy;
+
