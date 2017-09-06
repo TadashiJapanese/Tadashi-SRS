@@ -1,8 +1,6 @@
 
 "use strict";
 
-import Config from '../config';
-
 const MINUTES = 60000;
 const HOURS = MINUTES*60;
 const DAYS = HOURS*24;

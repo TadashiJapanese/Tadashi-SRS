@@ -1,6 +1,6 @@
 "use strict";
 
-import Config from './config'
+const Config = require('./config');
 
 class Oracle {
 
