@@ -1,6 +1,6 @@
 "use strict";
 
-export default class Stats {
+class Stats {
 
     constructor() {
         this.daily = {};
@@ -27,3 +27,5 @@ export default class Stats {
     }
 
 }
+
+module.exports = Stats;

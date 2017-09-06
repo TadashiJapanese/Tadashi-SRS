@@ -7,7 +7,7 @@ const MINUTES = 60000;
 const HOURS = MINUTES*60;
 const DAYS = HOURS*24;
 
-export default class EnhancedPickStrategy {
+class EnhancedPickStrategy {
 
     // The Strategy determines the order to present questions to the user.
 
@@ -140,4 +140,4 @@ export default class EnhancedPickStrategy {
 
 }
 
-
+module.exports = EnhancedPickStrategy;
