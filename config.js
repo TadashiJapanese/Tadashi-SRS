@@ -22,9 +22,9 @@ const Config = {
             4: 7 * DAYS,
             5: 14 * DAYS,
             6: 30 * DAYS,
-            7: 120 * DAYS,
-            8: 365 * DAYS,
-            9: 700 * DAYS
+            7: 60 * DAYS,
+            8: 120 * DAYS,
+            9: 240 * DAYS
         }
 
     }
