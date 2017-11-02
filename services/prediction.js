@@ -8,7 +8,7 @@ const DAYS = HOURS*24;
 
 const THRESHOLDS = Config.buckets.STALENESS_THRESHOLDS;
 
-export function predict(queue, days=7) {
+function predict(queue, days=7) {
 
     // prestep - get all items that could possibly be due and create proxies
     // of them that we can simulate the passage of time with
