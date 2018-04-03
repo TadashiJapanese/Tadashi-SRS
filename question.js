@@ -125,6 +125,12 @@ class Item {
         ) >= Config.buckets.STALENESS_THRESHOLDS[this.bucket]
     }
 
+    eligibleForPromotionAt(when){
+        return (
+            when - this.lastPromoted
+        ) >= Config.buckets.STALENESS_THRESHOLDS[this.bucket]
+    }
+
     promote() {
         if(this.bucket < Config.buckets.MAX_BUCKET) {
             this.bucket += 1;
