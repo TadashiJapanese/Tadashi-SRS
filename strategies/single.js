@@ -104,7 +104,7 @@ class SingleLevelPickStrategy {
     }    
 
     amountLeft() {
-        return Infinity;
+        return this.queue.length;
     }
 
 }
