@@ -132,7 +132,9 @@ class EnhancedPickStrategy {
     }    
 
     amountLeft() {
-        return Infinity;
+        return this.queue.filter(
+            (i) => i.eligibleForPromotion()
+        ).length;
     }
 
 
