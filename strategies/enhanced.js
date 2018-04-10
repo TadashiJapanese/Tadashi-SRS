@@ -128,7 +128,7 @@ class EnhancedPickStrategy {
     }
 
     isFinished() {
-        return this.queue.length == 0;
+        return this.amountLeft() == 0;
     }    
 
     amountLeft() {
