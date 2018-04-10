@@ -16,7 +16,7 @@ language, where you have to learn tens of thousands of vocabulary words.
 Usage
 -----
     
-```
+```javascript
 import Drill from 'tadashisrs/drill';
 import Item from 'tadashisrs/question';
 
@@ -40,6 +40,8 @@ while( ! drill.isFinished() ){
     // assume we got it right...
     if(card.checkAnswer("African or European Swallow")){
         drill.right(card);  
+    } else {
+        drill.wrong(card);
     }
 
 }
