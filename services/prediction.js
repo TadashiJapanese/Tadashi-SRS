@@ -36,7 +36,7 @@ function predict(queue, days=7) {
         var synthDate = (now.getTime() + 24*HOURS*day);
 
         // initialise the count for thie date to 0 in the log
-        log[day] = 0;
+        log[day] = [];
 
         // for each item that could be due
         for(let proxy of proxies) {
@@ -44,10 +44,10 @@ function predict(queue, days=7) {
             // if it was stale at this simulated date
             if(synthDate - proxy.lastPromoted >= THRESHOLDS[proxy.bucket]){
                 
-                // then increase the count of due items by 1 for thie date
-                log[day] += 1;
+                // this item was due on that date
+                log[day].push(proxy.item);
 
-                // and promote it
+                // simulate promoting this item (we got it right)
                 proxy.bucket += 1;
 
                 // and set the last promoted date on the item so it doesn't
