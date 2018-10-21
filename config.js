@@ -10,7 +10,7 @@ const Config = {
 
     buckets : {
 
-        MAX_BUCKET: 9,
+        MAX_BUCKET: 10,
 
         // 4h - 8h -24h - 3d -Guru- 1w - 2w -Master- 1m -Enlightened- 4m -Burned-
 
@@ -24,7 +24,8 @@ const Config = {
             6: 30 * DAYS,
             7: 60 * DAYS,
             8: 120 * DAYS,
-            9: 240 * DAYS
+            9: 240 * DAYS,
+            10: 365 * DAYS
         }
 
     }
