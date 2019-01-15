@@ -139,8 +139,17 @@ class Item {
     }
 
     demote() {
-        this.bucket = 0;
+
+        if(this.bucket <= 4){
+            this.bucket = 0;
+        } else if(this.bucket <= 6){
+            this.bucket = 4;
+        } else {
+            this.bucket = 5;
+        }
+
         this.lastPromoted = this.dateFactory.now();
+
     }
 
 }
